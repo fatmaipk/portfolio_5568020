@@ -1,16 +1,25 @@
 # portfolio_5568020
 
-A new Flutter project.
 
-## Getting Started
+# Portfolio App – Praktikum 1
 
-This project is a starting point for a Flutter application.
+Dies ist mein erstes Flutter-Projekt im Rahmen des Praktikums.  
+Es dient als Grundlage für meine persönliche Portfolio-App.
 
-A few resources to get you started if this is your first Flutter project:
+## 📦 Flutter-Version
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Flutter 3.29.3  
+(Du kannst deine Version mit `flutter --version` überprüfen)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## ▶️ Projekt ausführen
+
+1. Repository klonen oder herunterladen
+2. Abhängigkeiten installieren:
+
+   ```bash
+   flutter pub get
+flutter run
+
+
+
+
