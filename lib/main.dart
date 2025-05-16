@@ -1,5 +1,9 @@
 import 'package:flutter/material.dart';
 import 'pages/home_page.dart';
+import 'pages/slider_page.dart';
+import 'pages/profile_form_page.dart';
+import 'pages/settings_page.dart';
+import 'pages/summary_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -13,7 +17,16 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Portfolio von Fatma',
+      theme: ThemeData(
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+      ),
       home: const HomePage(),
+      routes: {
+        '/slider': (_) => const SliderPage(),
+        '/profile': (_) => const ProfileFormPage(),
+        '/settings': (_) => const SettingsPage(),
+        '/summary': (_) => const SummaryPage(),
+      },
     );
   }
 }

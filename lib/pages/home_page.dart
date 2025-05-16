@@ -6,11 +6,26 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Willkommen im Portfolio von Fatma'),
-      ),
-      body: const Center(
-        child: Text('Willkommen im Portfolio von Fatma'),
+      appBar: AppBar(title: const Text('Willkommen im Portfolio von Fatma')),
+      body: ListView(
+        children: [
+          ListTile(
+            title: const Text('Slider-Seite'),
+            onTap: () => Navigator.pushNamed(context, '/slider'),
+          ),
+          ListTile(
+            title: const Text('Profil bearbeiten'),
+            onTap: () => Navigator.pushNamed(context, '/profile'),
+          ),
+          ListTile(
+            title: const Text('Einstellungen'),
+            onTap: () => Navigator.pushNamed(context, '/settings'),
+          ),
+          ListTile(
+            title: const Text('Zusammenfassung'),
+            onTap: () => Navigator.pushNamed(context, '/summary'),
+          ),
+        ],
       ),
     );
   }
