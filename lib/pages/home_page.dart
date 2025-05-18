@@ -6,7 +6,12 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('Willkommen im Portfolio von Fatma')),
+      backgroundColor: Colors.lightBlueAccent, // <-- HIER eingefügt
+      appBar: AppBar(
+        title: const Text('Willkommen im Portfolio von Fatma'),
+        backgroundColor: Colors.lightBlueAccent,
+        elevation: 0,
+      ),
       body: ListView(
         children: [
           ListTile(
